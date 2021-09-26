@@ -1,0 +1,62 @@
+.center {
+    position: absolute;
+    text-align: center;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 40%;
+    margin: auto;
+}
+
+.block {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 80px;
+    border-style: none;
+    color: #a1a3a5;
+    font-weight: 400;
+    background: #34393e;
+    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+}
+
+.block.title {
+    height: 100px;
+}
+
+.joke {
+    position: absolute;
+    top: 20%;
+    left: 43%;
+    height: 30%;
+    width: 90%;
+    margin: -15% 0 0 -35%;
+}
+
+.dominik {
+    position: absolute;
+    border-radius: 80px;
+    width: 530px;
+    height: auto;
+    margin: 90px 0 100px -480px;
+    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+    transition: 1s;
+}
+
+.dominik:hover, .dominik:focus {
+    transform: scale(2);
+}
+
+.mem {
+    position: absolute;
+    border-radius: 80px;
+    width: auto;
+    height: auto;
+    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+}
