@@ -1,6 +1,8 @@
 body {
     height: 100%;
     background: linear-gradient(0deg, rgb(46, 51, 56) 46%, rgb(52, 57, 62) 74%);
+
+    font-family: 'Open Sans', sans-serif;
 }
 
 header {
@@ -20,23 +22,27 @@ aside {
     height: 370px;
     margin-left: auto;
     margin-right: 20px;
-    font-size: 18px;
     border-radius: 80px;
     border-style: none;
     color: #2e3338;
-    font-weight: 400;
     background: #828587;
     box-shadow: inset 2px 2px 10px #373839,
     -2px -2px 10px #373839;
+
+    font-size: 18px;
+    font-weight: 400;
 }
 
 footer {
     margin-top: 8px;
     background: #2e3338;
     color: #828587;
-    font-size: 80%;
     padding: 5px;
     clear: both;
+
+    font-size: 80%;
+    line-height: normal;
+
 }
 
 a {
@@ -54,4 +60,18 @@ footer p {
 
 .clearfloat {
     clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center
+}
+
+#listJoke {
+    text-decoration: underline;
+}
+
+#tred {
+    font-size: 0.7em;
+    margin-left: -50px;
+    text-transform: uppercase;
 }

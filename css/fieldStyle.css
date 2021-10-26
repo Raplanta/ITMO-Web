@@ -1,4 +1,4 @@
-.center {
+/*.center {
     position: absolute;
     text-align: center;
     top: 0;
@@ -8,7 +8,7 @@
     width: 50%;
     height: 40%;
     margin: auto;
-}
+}*/
 
 .block {
     position: relative;
@@ -17,29 +17,30 @@
     margin-left: auto;
     margin-right: auto;
     padding: 5px;
-    font-size: 18px;
     border-radius: 80px;
     border-style: none;
     color: #a1a3a5;
-    font-weight: 400;
     background: #34393e;
     box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+
+    font-size: 18px;
+    font-weight: 400;
 }
 
 .block.title {
     height: 100px;
 }
 
-.joke {
+#joke {
     position: absolute;
     top: 20%;
-    left: 43%;
+    left: 45%;
     height: 30%;
     width: 90%;
     margin: -15% 0 0 -35%;
 }
 
-.dominik {
+.picture {
     position: absolute;
     border-radius: 80px;
     width: 530px;
@@ -49,14 +50,6 @@
     transition: 1s;
 }
 
-.dominik:hover, .dominik:focus {
+.picture:hover, .picture:focus {
     transform: scale(2);
-}
-
-.mem {
-    position: absolute;
-    border-radius: 80px;
-    width: auto;
-    height: auto;
-    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
 }
