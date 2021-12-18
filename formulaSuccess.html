@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/buttonStyle.css">
     <link rel="stylesheet" href="css/fieldStyle.css">
+    <link rel="stylesheet" href="css/tableStyle.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
 <header>
@@ -34,10 +36,49 @@
 </header>
 
 <main> <!-- блог -->
-    <div class="block">
-        <H1>Моя жизнь длится всего 10 секунд – между стартом и разгоном
-            <img class="picture" src="https://www.meme-arsenal.com/memes/925e41840c064693551dd17279828c3d.jpg"></H1>
+    <div class="block title"><H1>Моя жизнь длится всего 10 секунд – между стартом и разгоном</H1></div>
+    <div class="block" style="height: 800px">
+        <div style="text-align: center"><!--<table border="1">
+            <tr><th>Тачки</th><th>Форсаж</th></tr>
+            <tr><td>Газик, ну что ты встал прямо перед камерой?<br>Не заслоняй лидера гонок!</td>
+                <td>Нет ничего печальнее, чем зверь, запертый в клетке</td></tr>
+            <tr><td>Меня звать Мэтр. Ну, как Кило́метр.<br>Чуток короче… А тебя как?</td>
+                <td>В уличных драках всегда побеждает улица</td></tr>
+            <tr><td>Можно заехать неизвестно куда… лишь бы знать, откуда</td>
+                <td>Ты убрала ногу с шеи тигра!</td></tr>
+            <tr><td>Не бойтесь неудач. Бойтесь не упустить шанс</td>
+                <td>Моя жизнь измеряется в километрах</td></tr>
+        </table></div>-->
+        <table border="1">
+            <caption>Пожилые цитаты</caption>
+            <thead>
+            <tr>
+                <th scope="col">Тачки</th>
+                <th scope="col">Форсаж</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td data-label="Тачки">Газик, ну что ты встал прямо перед камерой?<br>Не заслоняй лидера гонок!</td>
+                <td data-label="Форсаж">Нет ничего печальнее, чем зверь, запертый в клетке</td>
+            </tr>
+            <tr>
+                <td data-label="Тачки">Меня звать Мэтр. Ну, как Кило́метр.<br>Чуток короче… А тебя как?</td>
+                <td data-label="Форсаж">В уличных драках всегда побеждает улица</td>
+            </tr>
+            <tr>
+                <td data-label="Тачки">Можно заехать неизвестно куда… лишь бы знать, откуда</td>
+                <td data-label="Форсаж">Ты убрала ногу с шеи тигра!</td>
+            </tr>
+            <tr>
+                <td data-label="Тачки">Не бойтесь неудач. Бойтесь не упустить шанс</td>
+                <td data-label="Форсаж">Моя жизнь измеряется в километрах</td>
+            </tr>
+            </tbody>
+        </table>
+        </div>
     </div>
+        <img class="picture" src="https://www.meme-arsenal.com/memes/925e41840c064693551dd17279828c3d.jpg">
 </main>
 
 <footer>

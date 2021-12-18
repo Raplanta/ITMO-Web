@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/buttonStyle.css">
     <link rel="stylesheet" href="css/fieldStyle.css">
+    <script src="js/main.js"></script>
 </head>
 <body>
 <header>
@@ -20,13 +21,13 @@
             <div>
                 <button type="submit" onClick="window.location='index.html'">Обо мне</button>
             </div>
-            <div>
+            <div class="mediaSc">
                 <button type="submit" onClick="window.location='artASCII.html'">ASCII art</button>
             </div>
             <div>
                 <button type="submit" onClick="window.location='snippetCode.html'">Мой код</button>
             </div>
-            <div>
+            <div class="mediaSc">
                 <button type="submit" onClick="window.location='formulaSuccess.html'">Формула успеха</button>
             </div>
         </div>
@@ -34,8 +35,8 @@
 </header>
 
 <main> <!-- блог -->
-    <div class="block"; style="height: 900px">
-        <h1>Тут вся неинтересная информация обо мне</h1>
+    <div class="block title" id="absolute"><h1>Тут вся неинтересная информация обо мне</h1></div>
+    <div class="block"; style="height: 900px; margin-top: 130px">
         <section>
             <h3>Мои любимые анекдоты</h3>
             <ul id="listJoke">

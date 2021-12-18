@@ -33,3 +33,7 @@ button:active, button:focus {
     display: inline-block;
     width: 300px;
 }
+
+.active_menu {
+    opacity: 0.4;
+}

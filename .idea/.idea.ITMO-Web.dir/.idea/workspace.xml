@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="079e112e-dc5d-4573-b4e0-5ff66182236a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/artASCII.html" beforeDir="false" afterPath="$PROJECT_DIR$/artASCII.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/formulaSuccess.html" beforeDir="false" afterPath="$PROJECT_DIR$/formulaSuccess.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/snippetCode.html" beforeDir="false" afterPath="$PROJECT_DIR$/snippetCode.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/fieldStyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/fieldStyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +28,7 @@
       <option name="presentableId" value="Default" />
       <updated>1633951539769</updated>
       <workItem from="1633951554208" duration="2000" />
+      <workItem from="1636210127170" duration="2000" />
     </task>
     <servers />
   </component>
