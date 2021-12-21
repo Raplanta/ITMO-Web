@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/buttonStyle.css" />
     <link rel="stylesheet" href="css/fieldStyle.css" />
-    <script src="js/main.js"></script>
+    <link rel="stylesheet" href="css/timetable.css" />
   </head>
   <body>
     <header>
@@ -31,23 +31,23 @@
               <p>ASCII art</p>
             </button>
           </div>
-          <div class="about-me current">
+          <div class="my-code">
             <button type="submit" onClick="window.location='snippetCode.html'">
               <p>Мой код</p>
             </button>
           </div>
           <div class="formula-success">
             <button
-              type="submit"
-              onClick="window.location='formulaSuccess.html'"
+                    type="submit"
+                    onClick="window.location='formulaSuccess.html'"
             >
               <p>Формула успеха</p>
             </button>
           </div>
-          <div class="formula-success">
+          <div class="formula-success current">
             <button
-                    type="submit"
-                    onClick="window.location='timetable.html'"
+              type="submit"
+              onClick="window.location='timetable.html'"
             >
               <p>Web-форма</p>
             </button>
@@ -57,36 +57,47 @@
     </header>
 
     <main>
-      <!-- блог -->
-      <div class="block title"><h1>Это пример моего кода</h1></div>
-      <div class="block">
-        <pre><code>
-
-
-    public IEnumerator Patrol()
-    {
-        float delta = 0f;
-        int index = 1;
-        float eps = 0.1f;
-
-        while (!FindPlayer())
-        {
-            delta += Time.deltaTime * speed;
-            transform.position -= (transform.position.x - posX[index]) * Time.deltaTime * Vector3.right * speed;
-            float del = transform.position.x - posX[index];
-            if (Mathf.Abs(del) < eps)
-            {
-                index = index == 1 ? 0 : 1;
-            }
-            transform.rotation = Quaternion.Euler(0, -Mathf.Sign(del) * 90, 0);
-
-            yield return null;
-        }
-
-        StartCoroutine(Hunt());
-    }
-    </code></pre>
+      <h2>План на неделю</h2>
+      <div class="plan-table">
+        <div class="day-table">
+          <h3>Понедельник</h3>
+          <form class="monday-form">
+            <input type="text" placeholder="Напишите что-нибудь" />
+            <button>Добавить</button>
+          </form>
+          <ul class="monday-activities"></ul>
+        </div>
+        <div class="day-table">
+          <h3>Вторник</h3>
+          <form class="monday-form">
+          <input type="text" placeholder="Напишите что-нибудь" />
+          <button>Добавить</button>
+        </form>
+          <ul class="monday-activities"></ul>
+        </div>
+        <div class="day-table">
+          <h3>Среда</h3>
+          <form class="monday-form">
+            <input type="text" placeholder="Напишите что-нибудь" />
+            <button>Добавить</button>
+          </form>
+          <ul class="monday-activities"></ul></div>
+        <div class="day-table">
+          <h3>Четверг</h3>
+          <form class="monday-form">
+            <input type="text" placeholder="Напишите что-нибудь" />
+            <button>Добавить</button>
+          </form>
+          <ul class="monday-activities"></ul></div>
+        <div class="day-table">
+          <h3>Пятница</h3>
+          <form class="monday-form">
+            <input type="text" placeholder="Напишите что-нибудь" />
+            <button>Добавить</button>
+          </form>
+          <ul class="monday-activities"></ul></div>
       </div>
+      <script src="js/timetable.js"></script>
     </main>
 
     <footer>

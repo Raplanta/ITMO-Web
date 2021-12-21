@@ -1,44 +1,70 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="UTF-8" />
 
     <title>Зябирова Алина M33061</title>
-    <meta name="keywords" content="Зябирова Алина Ренатовна портфолио"/>
-    <meta name="description" content="Тебе грустно, одиноко и нечем заняться? Заходи."/>
+    <meta name="keywords" content="Зябирова Алина Ренатовна портфолио" />
+    <meta
+      name="description"
+      content="Тебе грустно, одиноко и нечем заняться? Заходи."
+    />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttonStyle.css">
-    <link rel="stylesheet" href="css/fieldStyle.css">
-    <link rel="stylesheet" href="css/tableStyle.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/buttonStyle.css" />
+    <link rel="stylesheet" href="css/fieldStyle.css" />
+    <link rel="stylesheet" href="css/tableStyle.css" />
     <script src="js/main.js"></script>
-</head>
-<body>
-<header>
-    <!-- главная инфа -->
-    <nav>
+  </head>
+  <body>
+    <header>
+      <!-- главная инфа -->
+      <nav>
         <!-- ссылки -->
         <div id="container">
-            <div>
-                <button type="submit" onClick="window.location='index.html'">Обо мне</button>
-            </div>
-            <div>
-                <button type="submit" onClick="window.location='artASCII.html'">ASCII art</button>
-            </div>
-            <div>
-                <button type="submit" onClick="window.location='snippetCode.html'">Мой код</button>
-            </div>
-            <div>
-                <button type="submit" onClick="window.location='formulaSuccess.html'">Формула успеха</button>
-            </div>
+          <div class="about-me">
+            <button type="submit" onClick="window.location='index.html'">
+              <p>Обо мне</p>
+            </button>
+          </div>
+          <div class="ascii-art">
+            <button type="submit" onClick="window.location='artASCII.html'">
+              <p>ASCII art</p>
+            </button>
+          </div>
+          <div class="my-code">
+            <button type="submit" onClick="window.location='snippetCode.html'">
+              <p>Мой код</p>
+            </button>
+          </div>
+          <div class="formula-success current">
+            <button
+              type="submit"
+              onClick="window.location='formulaSuccess.html'"
+            >
+              <p>Формула успеха</p>
+            </button>
+          </div>
+          <div class="formula-success">
+            <button
+                    type="submit"
+                    onClick="window.location='timetable.html'"
+            >
+              <p>Web-форма</p>
+            </button>
+          </div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-<main> <!-- блог -->
-    <div class="block title"><H1>Моя жизнь длится всего 10 секунд – между стартом и разгоном</H1></div>
-    <div class="block" style="height: 800px">
-        <div style="text-align: center"><!--<table border="1">
+    <main>
+      <!-- блог -->
+      <div class="block title">
+        <h1>Моя жизнь длится всего 10 секунд – между стартом и разгоном</h1>
+      </div>
+      <div class="block" style="height: 800px">
+        <div style="text-align: center">
+          <!--<table border="1">
             <tr><th>Тачки</th><th>Форсаж</th></tr>
             <tr><td>Газик, ну что ты встал прямо перед камерой?<br>Не заслоняй лидера гонок!</td>
                 <td>Нет ничего печальнее, чем зверь, запертый в клетке</td></tr>
@@ -49,46 +75,78 @@
             <tr><td>Не бойтесь неудач. Бойтесь не упустить шанс</td>
                 <td>Моя жизнь измеряется в километрах</td></tr>
         </table></div>-->
-        <table border="1">
-            <caption>Пожилые цитаты</caption>
+          <table border="1">
+            <caption>
+              Пожилые цитаты
+            </caption>
             <thead>
-            <tr>
+              <tr>
                 <th scope="col">Тачки</th>
                 <th scope="col">Форсаж</th>
-            </tr>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-                <td data-label="Тачки">Газик, ну что ты встал прямо перед камерой?<br>Не заслоняй лидера гонок!</td>
-                <td data-label="Форсаж">Нет ничего печальнее, чем зверь, запертый в клетке</td>
-            </tr>
-            <tr>
-                <td data-label="Тачки">Меня звать Мэтр. Ну, как Кило́метр.<br>Чуток короче… А тебя как?</td>
-                <td data-label="Форсаж">В уличных драках всегда побеждает улица</td>
-            </tr>
-            <tr>
-                <td data-label="Тачки">Можно заехать неизвестно куда… лишь бы знать, откуда</td>
+              <tr>
+                <td data-label="Тачки">
+                  Газик, ну что ты встал прямо перед камерой?<br />Не заслоняй
+                  лидера гонок!
+                </td>
+                <td data-label="Форсаж">
+                  Нет ничего печальнее, чем зверь, запертый в клетке
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Тачки">
+                  Меня звать Мэтр. Ну, как Кило́метр.<br />Чуток короче… А тебя
+                  как?
+                </td>
+                <td data-label="Форсаж">
+                  В уличных драках всегда побеждает улица
+                </td>
+              </tr>
+              <tr>
+                <td data-label="Тачки">
+                  Можно заехать неизвестно куда… лишь бы знать, откуда
+                </td>
                 <td data-label="Форсаж">Ты убрала ногу с шеи тигра!</td>
-            </tr>
-            <tr>
-                <td data-label="Тачки">Не бойтесь неудач. Бойтесь не упустить шанс</td>
+              </tr>
+              <tr>
+                <td data-label="Тачки">
+                  Не бойтесь неудач. Бойтесь не упустить шанс
+                </td>
                 <td data-label="Форсаж">Моя жизнь измеряется в километрах</td>
-            </tr>
+              </tr>
             </tbody>
-        </table>
+          </table>
         </div>
-    </div>
-        <img class="picture" src="https://www.meme-arsenal.com/memes/925e41840c064693551dd17279828c3d.jpg">
-</main>
+      </div>
+      <img
+        class="picture"
+        src="https://www.meme-arsenal.com/memes/925e41840c064693551dd17279828c3d.jpg"
+      />
+    </main>
 
-<footer>
-    <!-- инфа обо мне снизу -->
-    <p><a href="https://github.com/Raplanta"> Полупустой гитхаб </a> |
-        <a href="https://drive.google.com/file/d/1usKlc7RHEoAGSmv726KILTp1xbUZs0RP/view?usp=sharing"> Резюме </a> |
-        <a href="https://sun9-20.userapi.com/impg/zK3KLQQhbMhHEFIZl7LwU9IWJ-HFViBfh42gpA/jFucEAVvC_8.jpg?size=600x546&quality=96&sign=dbd63e5e944fc7c88b5599b9fe619baa&type=album">Обезьянка</a>
-        | <a href="https://t.me/joinchat/Ad90FEEoFx5hZWMy"> Прикольный канал</a></p>
-    <p><a href="">Помощь временно безработной</a></p>
-    <p>Copyright © 2021. Сайт с анекдотом и портфолио </p>
-</footer>
-</body>
+    <footer>
+      <!-- инфа обо мне снизу -->
+      <p>
+        <a href="https://github.com/Raplanta"> Полупустой гитхаб </a> |
+        <a
+          href="https://drive.google.com/file/d/1usKlc7RHEoAGSmv726KILTp1xbUZs0RP/view?usp=sharing"
+        >
+          Резюме
+        </a>
+        |
+        <a
+          href="https://sun9-20.userapi.com/impg/zK3KLQQhbMhHEFIZl7LwU9IWJ-HFViBfh42gpA/jFucEAVvC_8.jpg?size=600x546&quality=96&sign=dbd63e5e944fc7c88b5599b9fe619baa&type=album"
+          >Обезьянка</a
+        >
+        | <a href="https://t.me/joinchat/Ad90FEEoFx5hZWMy"> Прикольный канал</a>
+      </p>
+      <p><a href="">Помощь временно безработной</a></p>
+      <div class="load">
+        <p id="load-time"></p>
+      </div>
+      <p>Copyright © 2021. Сайт с анекдотом и портфолио</p>
+    </footer>
+  </body>
 </html>
