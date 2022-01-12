@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/buttonStyle.css" />
     <link rel="stylesheet" href="css/fieldStyle.css" />
     <link rel="stylesheet" href="css/timetable.css" />
+    <script rel="script" src="js/request.js"></script>
   </head>
   <body>
     <header>
@@ -57,47 +58,36 @@
     </header>
 
     <main>
-      <h2>План на неделю</h2>
+      <h2>Todolist</h2>
       <div class="plan-table">
         <div class="day-table">
-          <h3>Понедельник</h3>
-          <form class="monday-form">
-            <input type="text" placeholder="Напишите что-нибудь" />
+          <h3>todos</h3>
+          <form onsubmit="addRandomTask();return false;" class="monday-form">
+            <input disabled type="text" placeholder="Добавьте задание из бд" />
             <button>Добавить</button>
           </form>
-          <ul class="monday-activities"></ul>
+          <div class="image">
+            <img alt="preloader" class="none" id="preloader" src="gif/p.gif">
+          </div>
+          <div class="error">
+            <input type="text" id="error" class="none" value="⚠ Что-то пошло не так(" readonly="readonly">
+          </div>
+          <ul class="monday-activities">
+            <template>
+              <li>
+                <a></a>
+                <button onclick="deleteActivity(this)">Убрать</button>
+              </li>
+            </template>
+          </ul>
         </div>
-        <div class="day-table">
-          <h3>Вторник</h3>
-          <form class="monday-form">
-          <input type="text" placeholder="Напишите что-нибудь" />
-          <button>Добавить</button>
-        </form>
-          <ul class="monday-activities"></ul>
-        </div>
-        <div class="day-table">
-          <h3>Среда</h3>
-          <form class="monday-form">
-            <input type="text" placeholder="Напишите что-нибудь" />
-            <button>Добавить</button>
-          </form>
-          <ul class="monday-activities"></ul></div>
-        <div class="day-table">
-          <h3>Четверг</h3>
-          <form class="monday-form">
-            <input type="text" placeholder="Напишите что-нибудь" />
-            <button>Добавить</button>
-          </form>
-          <ul class="monday-activities"></ul></div>
-        <div class="day-table">
-          <h3>Пятница</h3>
-          <form class="monday-form">
-            <input type="text" placeholder="Напишите что-нибудь" />
-            <button>Добавить</button>
-          </form>
-          <ul class="monday-activities"></ul></div>
       </div>
       <script src="js/timetable.js"></script>
+      <button class="play">Play</button>
+      <button class="pause">Pause</button>
+      <button class="stop">Stop</button>
+      <button class="faster">Faster</button>
+      <button class="slower">Slower</button>
     </main>
 
     <footer>
@@ -123,4 +113,7 @@
       <p>Copyright © 2021. Сайт с анекдотом и портфолио</p>
     </footer>
   </body>
+  <script src="https://unpkg.com/@mojs/core"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/randomcolor/0.6.1/randomColor.min.js" integrity="sha512-vPeZ7JCboHcfpqSx5ZD+/jpEhS4JpXxfz9orSvAPPj0EKUVShU2tgy7XkU+oujBJKnWmu4hU7r9MMQNWPfXsYw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/mojs.js"></script>
 </html>

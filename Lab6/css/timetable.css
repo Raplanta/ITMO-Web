@@ -1,0 +1,13 @@
+.plan-table {
+  display: flex;
+  min-height: 300px;
+  justify-content: space-around;
+}
+
+h2,
+h3 {
+  color: #828587;
+}
+
+button {
+}

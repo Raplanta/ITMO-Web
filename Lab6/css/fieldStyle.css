@@ -1,0 +1,55 @@
+.block {
+    position: relative;
+    width: 1200px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-left: 30px;
+    border-radius: 80px;
+    border-style: none;
+    color: #a1a3a5;
+    background: #34393e;
+    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.block.title {
+    height: 100px;
+    margin-bottom: 20px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#joke {
+    position: absolute;
+    top: 20%;
+    left: 45%;
+    height: 30%;
+    width: 90%;
+    margin: -15% 0 0 -35%;
+}
+
+.picture {
+    position: absolute;
+    border-radius: 80px;
+    width: 530px;
+    height: auto;
+    margin: -400px 0 0 350px;
+    box-shadow: inset 3px 3px 10px #1e2224, -3px -3px 10px #1e2224;
+    transition: 1s;
+}
+
+.picture:hover, .picture:focus {
+    transform: scale(2);
+}
+
+#absolute {
+    position: absolute;
+    top: -125px;
+    left: 143px;
+}
