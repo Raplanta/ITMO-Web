@@ -6,12 +6,12 @@ async function addRandomTask() {
     let url = `https://jsonplaceholder.typicode.com/todos/${randint}`;
     let response = await fetch(url);
     if (response.ok) {
+        document.querySelector("#preloader").classList.add("none");
         let json = await response.json();
         addTask(json.title);
     } else {
         document.querySelector("#error").classList.remove("none");
     }
-    document.querySelector("#preloader").classList.add("none");
     document.querySelector(".monday-form button").removeAttribute("disabled");
 }
 

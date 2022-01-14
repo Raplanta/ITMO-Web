@@ -2,7 +2,7 @@ var speed = 1;
 
 var color_green = randomColor({
     luminosity: 'light', //яркость
-    hue: 'green' //оттенок
+    hue: 'yellow' //оттенок
 });
 
 var bubbles = []
@@ -11,7 +11,7 @@ for (let i = 0; i < 100; i++) {
     var bubble = new mojs.Shape({
         className: "mojs-bubbles",
         left: Math.floor(Math.random() * (document.documentElement.clientWidth - 100)) + 50, //координаты
-        top: 0, //координаты
+        top: -200, //координаты
         stroke: {
             "#426bdd": color_green
         }, //цвет
@@ -20,7 +20,7 @@ for (let i = 0; i < 100; i++) {
         radius: rand, //радиус (от 10 до 30)
         duration: (30 - (rand - 10)) * 500, //время действия (от 5000 до 15000)
         y: {
-            "-200": document.documentElement.scrollHeight - 30, //движение
+            0: document.documentElement.scrollHeight + 170, //движение
         },
         delay: "rand(0, 10000)", //задержка
         repeat: 100 //сколько раз повторять

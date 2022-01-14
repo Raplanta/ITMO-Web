@@ -11,12 +11,16 @@ if (addedActivity) {
 
 showActivities()
 
+function htmlEntities(str) {
+  return String(str).replace(/</g, '&lt;');
+}
+
 mondayButton.onclick = () => {
-  let text = mondayInput.value;
+  let text = htmlEntities(mondayInput.value);
   if (text.trim()) {
     allActivities.push(text);
     localStorage.setItem("added-activity", JSON.stringify(allActivities));
-    tmp = template.content.cloneNode(true);
+    let tmp = template.content.cloneNode(true);
     tmp.querySelector("a").innerHTML=text;
     mondayActivities.appendChild(tmp);
   }
@@ -31,7 +35,7 @@ function deleteActivity(el) {
 
 function showActivities() {
   allActivities.forEach(el => {
-    tmp = template.content.cloneNode(true);
+    let tmp = template.content.cloneNode(true);
     tmp.querySelector("a").innerHTML=el
     mondayActivities.appendChild(tmp)
   })
